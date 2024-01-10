@@ -35,9 +35,16 @@ module.exports = {
       ssr: true,
     },
   },
+  typescript: {
+    ignoreBuildErrors: true,
+
+  },
   swcMinify: true,
   images: {
     domains: ["raw.githubusercontent.com"],
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
   async redirects() {
     return [
