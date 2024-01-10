@@ -21,7 +21,6 @@ export const getWagmiConfig = () => {
   if (!process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID) {
     throw new Error("NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID not provided");
   }
-
   const projectId = process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID;
   const { chains, publicClient, webSocketPublicClient } = configureChains(
     APP_CHAINS,
