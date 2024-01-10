@@ -41,7 +41,6 @@ const mediaWidthTemplates: {
   `;
   return accumulator;
 }, {}) as any;
-
 const white = "#FFFFFF";
 const black = "#000000";
 
