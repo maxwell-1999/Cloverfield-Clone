@@ -18,7 +18,6 @@ export const getWagmiConfig = () => {
   if (!process.env.NEXT_PUBLIC_INFURA_KEY) {
     throw new Error("NEXT_PUBLIC_INFURA_KEY not provided");
   }
-
   if (!process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID) {
     throw new Error("NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID not provided");
   }
